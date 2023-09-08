@@ -27,7 +27,6 @@
             <span style="font-weight: 700">{{ address }}</span>
         </p>
         <p class="content" v-html="content"></p>
-        <!-- <ua-markdown class="content" :source="content" :showLine="true" /> -->
     </div>
 </template>
 
