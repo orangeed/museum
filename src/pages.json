@@ -17,6 +17,13 @@
                         "navigationBarTitleText": "文物清单",
                         "enablePullDownRefresh": false
                     }
+                },
+                {
+                    "path": "index/museumDetail/index",
+                    "style": {
+                        "navigationBarTitleText": "文物详情",
+                        "enablePullDownRefresh": false
+                    }
                 }
             ]
         }

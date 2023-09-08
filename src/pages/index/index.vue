@@ -15,7 +15,7 @@
         </div>
         <div class="museum">
             <div v-for="(item, index) in museumListItem" :key="index" class="museum-item" @click="handleGoToItem(item)">
-                <image class="image" :src="imgURL + item.img" mode="aspectFill" />
+                <image class="image" :src="`${imgURL}${item.img}`" mode="aspectFill" />
                 <span class="name">{{ item.text }}</span>
             </div>
         </div>
@@ -36,6 +36,7 @@ image {
     position: relative;
     .search {
         margin: 10rpx 20rpx;
+        padding-top: 10rpx;
     }
     .isFixed {
         position: fixed;

@@ -32,7 +32,7 @@ export const areaList: SeleteList[] = [
 
 // 博物馆名称
 export const museumList: SeleteList[] = [
-    { value: 1, text: '亚洲', children: [{ value: 1, text: '博物馆' }] },
+    { value: 1, text: '亚洲', children: [{ value: 1, text: '博物馆', img: '9oRk2KHA&path=%7BshareItemLink%3A9oRk2KHA%7D%2F&_etag=1694052932-882586' }] },
     {
         value: 2,
         text: '欧洲',
@@ -48,3 +48,4 @@ export const museumList: SeleteList[] = [
     { value: 5, text: '大洋洲' },
     { value: 6, text: '非洲' },
 ];
+

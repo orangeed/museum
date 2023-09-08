@@ -22,7 +22,14 @@ export default defineComponent({
 
         // 切换地区事件
         const handleChangeArea = (val: number) => {
-            museumListItem.value = museumList[Number(val - 1)].children;
+            museumListItem.value = [];
+            if (val == 0) {
+                museumList.forEach((v: SeleteList | any) => {
+                    if (v.children) museumListItem.value?.push(...v.children);
+                });
+            } else {
+                museumListItem.value = museumList[Number(val - 1)]?.children;
+            }
         };
 
         // 是否吸顶
@@ -49,6 +56,13 @@ export default defineComponent({
             });
         };
 
+        const openDropdown = ref<boolean>(false);
+
+        // 选项点击事件
+        const menuItemClickHandle = () => {
+            openDropdown.value = true;
+        };
+
         onMounted(() => {
             handleChangeArea(areaIndex.value);
             window.addEventListener('scroll', handleScroll);
@@ -70,6 +84,8 @@ export default defineComponent({
             museumList,
             museumListItem,
             handleGoToItem,
+            menuItemClickHandle,
+            openDropdown,
         };
     },
 });

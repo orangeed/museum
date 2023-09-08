@@ -57,6 +57,8 @@
         "@tuniao/tn-icon": "^1.5.0",
         "@tuniao/tn-style": "^1.0.19",
         "@tuniao/tnui-vue3-uniapp": "^1.0.9",
+        "md-editor-v3": "^4.6.1",
+        "tnuiv3p-tn-select-tags": "^1.0.4",
         "vue": "^3.2.47",
         "vue-i18n": "^9.1.9"
     },
